@@ -168,10 +168,11 @@ img.logo {
     margin: 0.4rem 0.6rem;
     border: 2px transparent solid;
     box-shadow: 3px 4px 0rem #0000004a;
-	transition:0.1s;
-	position:relative;
-	inset: 0px 0 0 0px;
-	cursor:pointer;
+    transition: 0.1s;
+    position: relative;
+    inset: 0px 0 0 0px;
+    cursor: pointer;
+    white-space: nowrap;
 }
 .btn:hover{
 	filter:saturate(0.7);
@@ -210,3 +211,14 @@ img.logo {
     /* background-size: contain; */
 /* } */
 
+.scroll-wrapper {
+    width: 90%;
+    text-align: center;
+    z-index: 0;
+    margin-right: 0rem;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
