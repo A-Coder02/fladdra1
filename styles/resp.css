@@ -31,7 +31,7 @@ body {
     overflow: hidden;
 }
 :root{
-	--at : 1s;
-	--ad : 2s;
+	--at : 1.5s;
+	--ad : 0.5s;
 }
 }
