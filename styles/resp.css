@@ -14,7 +14,24 @@
 }
 .scroll-wrapper {
     margin: 0;
-    width: 60%;
-	margin-top:-1rem;
+    width: 100%;
+    margin-top: -1rem;
+}
+header {
+    padding: 0rem !important;
+    background: #ffffff00;
+	box-shadow:0 0 7px 0px #0000001a;
+}
+.back-bg {
+    width: 0%;
+}
+body {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+:root{
+	--at : 1s;
+	--ad : 2s;
 }
 }
