@@ -4,8 +4,12 @@
 	box-sizing:border-box;
 	object-fit:cover;
 	background-size:cover;
-	
+	outline:none;
 }
+::selection{
+	background:var(--p-clr);
+}
+.dropdown{ display : none;}
 body {
     font-family: 'Lato', sans-serif;
     /* background: url('../4.png'); */
@@ -27,6 +31,7 @@ body {
 a{
 	color:inherit;
 	text-decoration:none;
+	cursor:pointer;
 }
 .header-wrapper {
     display: flex;
@@ -59,6 +64,7 @@ ul.nav-list-wrapper > li {
 	font-size:0.7rem;
 	position:relative;
 }
+ul.nav-list-wrapper  li a{width:100%;height:100%; }
 
 ul.nav-list-wrapper > li::before{
 	position:absolute;
@@ -75,6 +81,48 @@ ul.nav-list-wrapper > li:hover::before{
 	width:100%;
 	left:inherit;
 	right:0;
+}
+.dropdown,.dropdown *,
+.dropdown-click,.dropdown-click *
+{
+	transition:2s;
+}
+.dropdown,.dropdown-reset {
+    /* background: red; */
+    padding: 1rem !important;
+	position:relative;
+}
+.dropdown::after,.dropdown::before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:1.5px;
+	left:0;
+	background:var(--p-clr);
+}
+.dropdown::after{
+	transform: rotate(0deg);
+	top:30%;
+}
+.dropdown::before{
+	transform: rotate(0deg);
+	bottom:30%;
+}
+.dropdown-click::after {
+    transform: rotate(45deg);
+	 top:50%;
+}
+.dropdown-click::before {
+    transform: rotate(-45deg);
+	bottom:40%;
+}
+.dropdown-reset::after {
+     transform: rotate(0deg); 
+	 top:30%; 
+}
+.dropdown-reset::before {
+    transform: rotate(0deg);
+	bottom:30%;
 }
 img.logo {
     width: 25px;
@@ -95,6 +143,7 @@ img.logo {
     padding: 1rem;
 	/* mix-blend-mode: hard-light; */
 }
+
 .intro-head {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -142,6 +191,7 @@ img.logo {
     font-weight: 100;
     letter-spacing: 26px;
     color: var(--s-clr);
+    padding: 0.3rem;
 }
 .intro-head > span {
     width: 100%;
@@ -163,16 +213,16 @@ img.logo {
 }
 .btn {
     width: fit-content;
-    padding: 0.4rem;
+    padding: 0.8rem;
     background: gray;
     margin: 0.4rem 0.6rem;
     border: 2px transparent solid;
-    box-shadow: 3px 4px 0rem #0000004a;
     transition: 0.1s;
     position: relative;
     inset: 0px 0 0 0px;
     cursor: pointer;
     white-space: nowrap;
+    border-radius: 5px;
 }
 .btn:hover{
 	filter:saturate(0.7);
@@ -186,7 +236,6 @@ img.logo {
 .btn-primary{
 	background:var(--p-clr);
 	color:white;
-	border-radius:2px;
 }
 .btn-secondary{
 	background:none;

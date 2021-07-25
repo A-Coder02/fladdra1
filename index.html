@@ -10,6 +10,8 @@
 		<link rel = "stylesheet" href = "styles/style.css">
 		<link rel = "stylesheet" href = "styles/a.css">
 		<link rel = "stylesheet" href = "styles/resp.css">
+		
+		<script defer src = "scripts/script.js"></script>
 	</head>
 	<style>
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -22,25 +24,33 @@
 		<header class = "header-wrapper ha">
 			<div class = "header-item">
 				<div class = "brand">
-				
+				<a href = "index.html">
 					<img class = "logo" src = "logo.png" alt = "Fladdra Logo">
 					<span class = "brand-name">Fladdra</span>
+				</a>
 				</div>
 			</div>
-			<div class = "header-item">
+			<div class = "header-item dropdown-wrapper">
+			
+						<div class = "dropdown"></div>
+			</div>
+			
+			<div class = "header-item nav-wrapper-item">
 				<nav class = "nav-wrapper">
 					<ul class = "nav-list-wrapper">
-						<li><a href = "#">Home</a></li>
-						<li><a href = "#">About</a></li>
-						<li><a href = "#">Services</a></li>
-						<li><a href = "#">Carrer</a></li>
-						<li><a href = "#">Contact</a></li>
-						<li><a href = "#">Projects</a></li>
+						<li><a class = "nav-list-item" href = "#">Home</a></li>
+						<li><a class = "nav-list-item" href = "#">About</a></li>
+						<li><a class = "nav-list-item" href = "#">Services</a></li>
+						<li><a class = "nav-list-item" href = "#">Carrer</a></li>
+						<li><a class = "nav-list-item" href = "#">Contact</a></li>
+						<li><a class = "nav-list-item" href = "#">Projects</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main>
+		<div class = "dropdown-overlay hidden">
+			</div>
 			<div class = "back-bg">
 				<video id = "vid1" class = "intro-video" width="500" height="281" autoplay muted loop>
 					<source src="back.mp4" type="video/mp4" />

@@ -178,3 +178,111 @@ video#vid1 {
 video#vid1 {
     height: 100%;
 }
+
+
+.dropdown-click::after{
+	animation-name: d-click11;
+	animation-duration:0.4s;
+	animation-fill-mode: backwards;
+	backface-visibility: visible;
+	animation-delay:calc(var(--ad) + 0.2s);
+	/* position:relative; */
+	/* top:0; */
+}
+@keyframes d-click11{
+	0%{
+		transform: rotate(0deg);
+	top:30%;
+	animation-duration:1s;
+		}
+	50%{
+		transform: rotate(0deg);
+	top:50%;
+		}
+		100%{
+		transform: rotate(45deg);
+	
+		}
+		
+	
+}
+.dropdown-click::before{
+	animation-name: d-click12;
+	animation-duration:0.4s;
+	animation-fill-mode: backwards;
+	backface-visibility: visible;
+	animation-delay:calc(var(--ad) + 0.2s);
+	/* position:relative; */
+	/* top:0; */
+}
+@keyframes d-click12{
+	0%{
+		transform: rotate(0deg);
+	bottom:30%;
+	animation-duration:1s;
+		}
+	50%{
+		transform: rotate(0deg);
+	bottom:40%;
+		}
+		100%{
+		transform: rotate(-45deg);
+	
+		}
+		
+	
+}
+.dropdown-reset::after{
+	animation-name: d-click21;
+	animation-duration:0.4s;
+	animation-fill-mode: backwards;
+	backface-visibility: visible;
+	animation-delay:calc(var(--ad) + 0.2s);
+	/* position:relative; */
+	/* top:0; */
+}
+@keyframes d-click21{
+	0%{
+		transform: rotate(45deg);
+	top:50%;
+	animation-duration:1s;
+		}
+	50%{
+		transform: rotate(0deg);
+	top:50%;
+		}
+		100%{
+		transform: rotate(0deg);
+	top:30%;
+		}
+		
+	
+}
+
+.dropdown-reset::before{
+	animation-name: d-click22;
+	animation-duration:0.4s;
+	animation-fill-mode: backwards;
+	backface-visibility: visible;
+	animation-delay:calc(var(--ad) + 0.2s);
+	/* position:relative; */
+	/* top:0; */
+}
+@keyframes d-click22{
+	0%{
+		transform: rotate(-45deg);
+	bottom:40%;
+	animation-duration:1s;
+		}
+	50%{
+		transform: rotate(0deg);
+	bottom:30%;
+		}
+		100%{
+		transform: rotate(0deg);
+	bottom:30%;
+		}
+		
+	
+}
+}
